@@ -358,4 +358,12 @@ button:hover {
         display: flex;
         flex-direction: column;
     }
+    
+    .cabeçalho-link li a {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+    }
 }
