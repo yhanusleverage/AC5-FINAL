@@ -7,7 +7,7 @@ body {
 }
 
 body.fixed .cabeçalho-link {
-    cursor: pointerç
+    cursor: pointer;
     position: fixed;
     width: 100vw; /* Alterado para 100vw */
     top: 0;
