@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Quantum Computer</title>
+</head>
+
+<body>
+    <script>
+        // Adiciona uma classe "fixed" ao menu quando o usuário rola a página
+        window.onscroll = function() {
+            var navbar = document.getElementById("navbar");
+            if (window.pageYOffset >= navbar.offsetTop) {
+                navbar.classList.add("fixed");
+            } else {
+                navbar.classList.remove("fixed");
+            }
+        };
+    </script>
+
+    <div>
+        <header>
+
+            <img src="{{ url_for('static', filename='img/Qiskit.png') }}" alt="Descripción de la imagen" style="width: 100px; height: 100px;">
+
+            <!-- logo -->
+
+            <div class="cabeçalho-link" class="navbar" id="navbar">
+                <ul>
+                    <li><a href="/">Introdução</a></li>
+                    <li><a href="/application">Aplicações</a></li>
+                    <li><a href="/ingresso">Como Ingressar</a></li>
+                    <li><a href="/mat">Matematica da Computação Quântica</a></li>
+                    <li><a href="/Qiskit">Qiskit</a></li>
+                    </li>
+                </ul>
+            </div>
+            <a href="#contato">
+                <button>Contato</button>
+            </a>
+            <!-- cabeçalho-link -->
+        </header>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <h1>Computação Quâtica</h1>
+    <section class="about" id="section2">
+        <div>
+            <h2>A computação quântica tem o potencial de impactar muitos setores e indústrias, trazendo avanços significativos em diversas áreas</h2>
+            <section class="project-secction" class="content" id="section1">
+
+                <img src="{{ url_for('static', filename='img/computação-quantica1.jpg') }}" alt="Descripción de la imagen">
+                <div class="topic">
+                    <h2>Criptografia e Segurança: </h2>
+                    <p class="fonte18">O algoritmo de Shor para fatorar números inteiros grandes, essencial para a criptografia, é um exemplo significativo de aplicação prática da computação quântica.
+                    </p>
+                </div>
+                <br>
+                <!-- Tópico 2 -->
+                <div class="topic">
+                    <h2>Simulação de Moléculas: </h2>
+                    <p class="fonte18">Empresas como a D-Wave e a IBM estão explorando simulações quânticas para entender a estrutura molecular e acelerar a descoberta de novos medicamentos.</p>
+                </div>
+                <br>
+                <!-- Tópico 3 -->
+                <div class="topic">
+                    <h2>Otimização de Rotas: </h2>
+                    <p class="fonte18">Algoritmos quânticos podem ser aplicados para otimizar rotas de entrega, reduzindo o tempo e os recursos necessários para a logística.</p>
+                </div>
+                <br>
+                <div class="topic">
+                    <h2>Finanças e Modelagem de Mercado: </h2>
+                    <p class="fonte18">Algoritmos quânticos podem ajudar a realizar análises mais rápidas e precisas de riscos financeiros e modelagem de mercados.</p>
+                </div>
+
+                <!-- Adicione mais tópicos conforme necessário -->
+                <br>
+                <br>
+                <br>
+
+            </section>
+        </div>
+        <h2>Estudos de Caso e Exemplos
+        </h2>
+        <div class="project-secction">
+            <img src="{{ url_for('static', filename='img\computacao-quantica.png') }}" alt="Descripción de la imagen">
+            <!-- Tópico 1 -->
+            <div class="topic">
+                <h2>Fatoração de Números: </h2>
+                <p class="fonte18">Simulações quânticas podem ajudar a entender melhor as interações moleculares, acelerando o desenvolvimento de novos medicamentos e materiais.
+                </p>
+            </div>
+            <div class="topic">
+                <h2>Simulação de Moléculas: </h2>
+                <p class="fonte18">Empresas como a D-Wave e a IBM estão explorando simulações quânticas para entender a estrutura molecular e acelerar a descoberta de novos medicamentos.
+
+                </p>
+            </div>
+            <div class="topic">
+                <h2>Otimização de Rotas: </h2>
+                <p class="fonte18">Algoritmos quânticos podem ser aplicados para otimizar rotas de entrega, reduzindo o tempo e os recursos necessários para a logística.
+                </p>
+            </div>
+        </div>
+        <section id="form" action="processar.php" method="post">
+            <h2>Entre em Contato</h2>
+            <form class="form" action="processar.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+    </section>
+    <footer>
+        <p class="p_footer">&copy; IMPACTA 2023</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+
+</html>

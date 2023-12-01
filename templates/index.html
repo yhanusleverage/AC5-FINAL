@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Quantum Computer</title>
+</head>
+
+<body>
+    <script>
+        // Adiciona uma classe "fixed" ao menu quando o usuário rola a página
+        window.onscroll = function() {
+            var navbar = document.getElementById("navbar");
+            var body = document.body;
+
+            if (window.pageYOffset >= navbar.offsetTop) {
+                body.classList.add("fixed");
+            } else {
+                body.classList.remove("fixed");
+            }
+        };
+    </script>
+
+    <div>
+        <header>
+            <img src="{{ url_for('static', filename='img/Qiskit.png') }}" alt="Descripción de la imagen" style="width: 100px; height: 100px;">
+
+            <!-- logo -->
+
+            <div class="cabeçalho-link" class="navbar" id="navbar">
+                <ul>
+                    <li><a href="/">Introdução</a></li>
+                    <li><a href="/application">Aplicações</a></li>
+                    <li><a href="/ingresso">Como Ingressar</a></li>
+                    <li><a href="/mat">Matematica da Computação Quântica</a></li>
+                    <li><a href="/Qiskit">Qiskit</a></li>
+                    </li>
+                </ul>
+            </div>
+            <a href="#contato">
+                <button>Contato</button>
+            </a>
+            <!-- cabeçalho-link -->
+        </header>
+
+        <div class="container-text">
+            <div class="text">
+                <h1>Breve <span> Introdução</span></h1>
+                <br>
+            </div>
+            <!-- text -->
+        </div>
+        <!-- container-text -->
+    </div>
+    <!-- background -->
+
+    <script type="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <section class="project-secction" class="content" id="section1">
+        <h2>"Tópicos Emergentes: Uma Exploração da Computação Quântica"</h2>
+        <div class="project-secction">
+            <img src="{{ url_for('static', filename='img/intro-img.png') }}" alt="Descripción de la imagen">
+            <h3>Primeiro contato</h3>
+            <p> Bem-vindos à exploração do fascinante campo da computação quântica! Neste contexto, é essencial compreender a transição da computação clássica para a quântica. Enquanto os computadores convencionais operam com bits, representando informações
+                em estados binários (0 ou 1), a computação quântica utiliza qubits, capazes de existir nos estados 0, 1 ou numa superposição simultânea desses estados. A propriedade de superposição oferece uma perspectiva única, permitindo a exploração
+                simultânea de várias possibilidades de cálculos. Essa característica, aliada ao conceito de entrelaçamento, onde a alteração do estado de um qubit afeta instantaneamente o estado de outro, independentemente da distância, destaca o potencial
+                revolucionário dessa abordagem. Além disso, o emaranhamento, que cria uma interconexão entre qubits resultando em um estado global indescritível separadamente para cada qubit individual, apresenta uma eficiência notável em determinadas
+                aplicações. A computação quântica promete transformar a resolução de problemas computacionais desafiadores, como a fatoração de números grandes e a simulação de moléculas complexas. Em resumo, a computação quântica oferece uma nova perspectiva,
+                explorando as propriedades únicas dos qubits para superar as limitações dos sistemas clássicos. Este é um campo de estudo emocionante que está moldando o futuro da computação. Explore conosco as possibilidades fascinantes da computação
+                quântica! Atenciosamente, Entusiasta. </p>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <!-- Repita para outros projetos -->
+    </section>
+
+    <section id="form" action="processar.php" method="post">
+        <h2>Entre em Contato</h2>
+
+
+
+        <form class="form" action="processar.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+    </section>
+
+    <footer>
+        <p class="p_footer">&copy; IMPACTA 2023</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Quantum Computer</title>
+</head>
+
+<body>
+    <script>
+        // Adiciona uma classe "fixed" ao menu quando o usuário rola a página
+        window.onscroll = function() {
+            var navbar = document.getElementById("navbar");
+            if (window.pageYOffset >= navbar.offsetTop) {
+                navbar.classList.add("fixed");
+            } else {
+                navbar.classList.remove("fixed");
+            }
+        };
+    </script>
+
+    <div>
+        <header>
+            <img src="{{ url_for('static', filename='img/Qiskit.png') }}" alt="Descripción de la imagen" style="width: 100px; height: 100px;">
+
+            <!-- logo -->
+
+            <div class="cabeçalho-link" class="navbar" id="navbar">
+                <ul>
+                    <li><a href="/">Introdução</a></li>
+                    <li><a href="/application">Aplicações</a></li>
+                    <li><a href="/ingresso">Como Ingressar</a></li>
+                    <li><a href="/mat">Matematica da Computação Quântica</a></li>
+                    <li><a href="/Qiskit">Qiskit</a></li>
+                    </li>
+                </ul>
+            </div>
+            <a href="#contato">
+                <button>Contato</button>
+            </a>
+            <!-- cabeçalho-link -->
+        </header>
+
+        <div class="container-text">
+            <div class="text">
+
+                <!-- redes-social -->
+
+                </a>
+            </div>
+            <!-- text -->
+        </div>
+        <!-- container-text -->
+    </div>
+    <!-- background -->
+
+
+    <script type="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <h1>Como começar</h1>
+    <section class="about" id="section2">
+        <div>
+            <h2>Ingressar na área de computação quântica é empolgante, mas requer um pouco de preparação.
+            </h2>
+            <div class="project-secction">
+                <img src="{{ url_for('static', filename='img\computacaoQ.png') }}" alt="Descripción de la imagen">
+
+                <div class="topic">
+                    <h2>Educação e Habilidades: </h2>
+                    <p class="fonte18">Fundações em Matemática e Física: Uma boa compreensão de álgebra linear, cálculo, teoria dos números e mecânica quântica é fundamental. Programação: Conhecimento em linguagens como Python é útil. Familiarize-se com conceitos básicos
+                        de programação para manipular qubits e criar algoritmos quânticos.
+
+                    </p>
+                </div>
+
+                <!-- Tópico 2 -->
+                <div class="topic">
+                    <h2>Recursos para Aprender: </h2>
+                    <p class="fonte18">Cursos Online: Plataformas como Coursera, edX e Udacity oferecem cursos introdutórios em computação quântica. Livros: "Quantum Computing for Everyone" de Chris Bernhardt ou "Quantum Computation and Quantum Information" de Michael Nielsen
+                        e Isaac Chuang são ótimos para iniciantes. Tutoriais e Documentação: Explorar bibliotecas como Qiskit ou Cirq (do Google) oferece documentação detalhada e tutoriais para programar em computação quântica.
+                    </p>
+                </div>
+
+                <!-- Tópico 3 -->
+                <div class="topic">
+                    <h2>Experiências Práticas e Projetos: </h2>
+                    <p class="fonte18">Simuladores Quânticos: Experimente usar simuladores como Qiskit ou Quirk para criar circuitos quânticos e entender como funcionam. Projetos Pessoais: Tente criar algoritmos simples, como o algoritmo de Deutsch-Jozsa ou o algoritmo
+                        de Grover, para entender como a computação quântica pode resolver problemas específicos. Comunidades e Hackathons: Participe de grupos de estudo, eventos e hackathons relacionados à computação quântica para colaborar com outras
+                        pessoas e aplicar seus conhecimentos em desafios práticos.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <section class="project-secction" id="section3">
+                <h2>Lembrete</h2>
+                <p>Além disso, manter-se atualizado com os avanços na área, ler artigos acadêmicos e participar de conferências pode ampliar seus conhecimentos e oportunidades de networking.
+                </p>
+                <p class="fonte18">Lembre-se, a computação quântica é um campo desafiador, mas muito emocionante. Começar com uma base sólida em matemática, física e programação, além de explorar recursos educacionais e aplicar esse conhecimento em projetos práticos, é
+                    um excelente começo para entrar nesse campo promissor!</p>
+                <p>Desafios e Futuro: A computação quântica ainda está em sua infância, com muitos desafios técnicos a superar, como a estabilidade dos qubits e a criação de algoritmos eficientes. No entanto, há um grande potencial para impactar áreas como
+                    criptografia, simulação molecular, inteligência artificial e otimização. Se interessar-se por este campo, estar aberto para aprender e acompanhar as inovações é crucial, já que a computação quântica tem o potencial de transformar significativamente
+                    a forma como lidamos com problemas complexos e processamos informações.</p>
+
+
+                <section id="form" action="processar.php" method="post">
+                    <h2>Entre em Contato</h2>
+
+
+
+                    <form class="form" action="processar.php" method="post">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br><br>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+
+                </section>
+
+            </section>
+            <!-- Adicione mais tópicos conforme necessário -->
+            <footer>
+                <p class="p_footer">&copy; IMPACTA 2023</p>
+            </footer>
+</body>
+
+</html>

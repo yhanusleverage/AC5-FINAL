@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Quantum Computer</title>
+</head>
+
+<body>
+    <script>
+        // Adiciona uma classe "fixed" ao menu quando o usuário rola a página
+        window.onscroll = function() {
+            var navbar = document.getElementById("navbar");
+            if (window.pageYOffset >= navbar.offsetTop) {
+                navbar.classList.add("fixed");
+            } else {
+                navbar.classList.remove("fixed");
+            }
+        };
+    </script>
+
+    <div>
+        <header>
+            <img src="{{ url_for('static', filename='img/Qiskit.png') }}" alt="Descripción de la imagen" style="width: 100px; height: 100px;">
+
+            <div class="cabeçalho-link" class="navbar" id="navbar">
+                <ul>
+                    <li><a href="/">Introdução</a></li>
+                    <li><a href="/application">Aplicações</a></li>
+                    <li><a href="/ingresso">Como Ingressar</a></li>
+                    <li><a href="/mat">Matematica da Computação Quântica</a></li>
+                    <li><a href="/Qiskit">Qiskit</a></li>
+                    </li>
+                </ul>
+            </div>
+            <a href="#contato">
+                <button>Contato</button>
+            </a>
+            <!-- cabeçalho-link -->
+        </header>
+    </div>
+    <!-- background -->
+
+
+    <script type="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <section class="about" id="section2">
+        <h1> "Desvendando a Matemática da Computação Quântica: Álgebra Linear, Cálculo Matricial e os Intrigantes Conceitos de Superposição e Emaranhamento"</h1>
+        <div>
+
+
+
+            <section class="project-secction" class="content" id="section1">
+                <h3>
+                    online
+                </h3>
+                <div class="project-secction">
+                    <img src="{{ url_for('static', filename='img\mecanica-quantica-2.png') }}" alt="Descripción de la imagen">
+
+                    <!-- Tópico 1 -->
+                        <div class="topic">
+                            <h2>Álgebra Linear: </h2>
+                            <p>Ajuda a entender espaços vetoriais e transformações lineares, fundamentais para representar estados quânticos.
+                            </p>
+                        </div>
+
+                        <!-- Tópico 2 -->
+                        <div class="topic">
+                            <h2>Teoria dos Números:</h2>
+                            <p>Importante para entender algoritmos quânticos, especialmente na área de fatoração de números.</p>
+                        </div>
+
+                        <!-- Tópico 3 -->
+                        <div class="topic">
+                            <h2>Probabilidade e Estatística: </h2>
+                            <p>Fundamentais para compreender a natureza probabilística dos qubits e suas medições.</p>
+                        </div>
+
+                        <div class="topic">
+                            <h2>Recursos para Aprofundamento: </h2>
+                            <p>Khan Academy: Oferece cursos online gratuitos em álgebra linear e estatística, ótimos para revisar conceitos matemáticos fundamentais. Livros de Matemática para Iniciantes: "Álgebra Linear para Leigos" ou "Introdução à Teoria
+                                dos Números" são livros acessíveis para iniciantes. Cursos Online: Plataformas como Coursera e edX oferecem cursos introdutórios em matemática para computação quântica. Esses recursos podem ajudar a construir uma base matemática
+                                sólida para entender os conceitos por trás da computação quântica. É importante ir progredindo aos poucos, começando com conceitos básicos e expandindo conforme se sente mais confortável com a matemática envolvida.
+                            </p>
+                        </div>
+
+            </section>
+
+            <!-- Outras seções, como Contato -->
+
+            <section id="form" action="processar.php" method="post">
+                <h2>Entre em Contato</h2>
+
+
+
+                <form class="form" action="processar.php" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+
+            </section>
+            <!-- Adicione mais tópicos conforme necessário -->
+            <footer>
+                <p class="p_footer">&copy; IMPACTA 2023</p>
+            </footer>
+            </body>
+
+            </html>
+
+            <!-- Repita para outros projetos -->
