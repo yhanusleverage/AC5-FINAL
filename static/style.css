@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding-top: 80px; /* Ajuste conforme necessário */
+    margin: 0;
+}
+
+body.fixed .cabeçalho-link {
+    cursor: pointerç
+    position: fixed;
+    width: 100vw; /* Alterado para 100vw */
+    top: 0;
+    z-index: 1000;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 50;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    border: solid 3px rgb(12, 72, 235);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    display: block;
+    padding: 100px;
+    border: solid 3px rgb(12, 72, 235);
+    margin: 20px;
+    border-radius: 30px;
+    /* Arredonda as bordas do section */
+}
+
+footer {
+    border: solid 3px rgb(12, 72, 235);
+    border-radius: 30px;
+    color: rgb(12, 72, 235);
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Arredonda as bordas do body */
+
+.background {
+    background-color: black;
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
+    background-size: cover;
+    /* Ajusta o tamanho para cobrir todo o elemento */
+    background-position: center;
+    /* Centraliza a imagem no elemento */
+}
+
+header {
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 100px;
+    color: #fff;
+    padding: 1px;
+    margin-bottom: 20px;
+}
+
+.cabeçalho-link {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.cabeçalho-link ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.cabeçalho-link li {
+    margin-right: 20px;
+}
+
+.cabeçalho-link a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cabeçalho-link a:hover {
+    color: #0909fa;
+    transition: 0.3s all;
+}
+
+.container-text {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+span {
+    color: #0909fa;
+}
+
+.text h3 {
+    color: #0909fa;
+    font-size: 28px;
+}
+
+h3 {
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+h4 {
+    text-align: center;
+    color: #fff;
+}
+
+.p_footer {
+    text-align: center;
+}
+
+.fonte18 {
+    font-size: 18px;
+}
+
+p {
+    text-align: justify;
+    color: #fff;
+}
+
+label {
+    color: #fff;
+}
+
+.text h1 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.text p {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+button {
+    color: #0909fa;
+    background: transparent;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #0909fa;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn {
+    background: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px black;
+    cursor: pointer;
+    margin-top: 20px;
+    /* Adiciona margem de 20px na parte superior */
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 3px solid #0909fa;
+    color: #0909fa;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.red {
+    color: red;
+}
+
+.project-secction {
+    display: flex;
+    /* Torna a seção um contêiner flexível */
+    flex-direction: column;
+    /* Organiza os elementos verticalmente */
+    padding: 30px;
+    margin: 20px;
+    border: solid 3px rgb(12, 72, 235);
+    border-radius: 30px;
+    /* Arredonda as bordas do .project */
+}
+
+.project-secction img {
+    border-radius: 10%;
+    display: flex;
+    border: solid 3px rgb(12, 72, 235);
+    margin: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15000px;
+    /* Arredonda as bordas das imagens dentro de .project */
+}
+
+.project-secction2 {
+    display: flex;
+    /* Torna a seção um contêiner flexível */
+    flex-direction: column;
+    /* Organiza os elementos verticalmente */
+    padding: 100px;
+    margin: 20px;
+    border: solid 3px rgb(12, 72, 235);
+    border-radius: 30px;
+    /* Arredonda as bordas do .project */
+}
+
+.project-secction2 img {
+    border-radius: 10%;
+    display: flex;
+    border: solid 3px rgb(12, 72, 235);
+    margin: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    /* Arredonda as bordas das imagens dentro de .project */
+}
+
+#form {
+    text-align: center;
+    display: block;
+    /* Torna a seção um contêiner block */
+    padding: 10px;
+    margin: 50px;
+    border: solid 3px rgb(12, 72, 235);
+    border-radius: 30px;
+    /* Arredonda as bordas do .project */
+}
+
+.margen-class {
+    padding: 30px;
+    border: solid 3px rgb(12, 72, 235);
+    margin: 30px;
+    border-radius: 30px;
+    /* Arredonda as bordas das classes .margen-class */
+}
+
+#about {
+    display: auto;
+    /* Ativa o layout de duas colunas usando flexbox */
+    justify-content: space-between;
+    /* Colunas distribuídas horizontalmente */
+}
+
+.column {
+    border-radius: 10px;
+    flex: 1;
+    /* Faz com que as colunas ocupem a mesma largura */
+    padding: 20px;
+    /* Adicione preenchimento interno para separação */
+    border: 3px solid rgb(12, 72, 235);
+    /* Adicione bordas para separação visual */
+}
+
+
+/* Adaptação dos estilos do menu para o seu caso */
+
+
+/* Exemplo de media query para dispositivos móveis */
+
+@media screen and (max-width: 768px) {
+     body,
+    header,
+    .column,
+    .project-secction,
+    .margen-class {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    body.fixed .cabeçalho-link {
+        cursor: pointer;
+        width: 100%; /* Define a largura para 100% em telas menores */
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    body {
+        padding: 20px;
+        font-size: 14px;
+        /* Reduza o preenchimento */
+    }
+    header {
+        padding: 20px;
+    }
+    .column {
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid rgb(12, 72, 235);
+        
+    }
+    .project-secction {
+        padding: 10px;
+        margin: 10px;
+    }
+    .project-secction img {
+        border: 1px solid rgb(12, 72, 235);
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+}
